@@ -67,9 +67,10 @@ class Renderer {
       const { timeout, waitUntil, credentials } = options
       page = await this.createPage(url, { timeout, waitUntil, credentials })
       const html = await page.content()
+      await this.closePage(page)
       return html
     } finally {
-      this.closePage(page)
+      await this.closePage(page)
     }
   }
 
