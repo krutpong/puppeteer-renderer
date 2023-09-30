@@ -18,7 +18,7 @@ You can run Chromium or docker.
 (service port: 3000)
 
 ### Start server using docker (If you can not run Chromium and installed docker)
-`docker run -d --name renderer -p 8080:3000 zenato/puppeteer-renderer`
+`docker run -d --name renderer -p 8080:8088 krutpong/puppeteer-renderer`
 
 ### Test on your browser
 Input url `http://localhost:{port}/?url=https://www.google.com`
