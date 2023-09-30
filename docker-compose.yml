@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  puppeteer-web-scraper:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: puppeteer-web-scraper
+    container_name: puppeteer-web-scraper
+    ports:
+      - "8088:8088"
+    restart: always
